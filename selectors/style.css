@@ -1,0 +1,31 @@
+html {
+
+    font-size: 22px;
+}
+
+body {}
+
+/* element selector  */
+p {
+    color: purple;
+}
+
+/* class selector  */
+.gray {
+    color: gray;
+}
+
+#second {
+    font-style: italic;
+}
+
+/* Grouping selectors  */
+h1 h3 {
+    color: blue;
+}
+
+/* Descendamt selectors  */
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}

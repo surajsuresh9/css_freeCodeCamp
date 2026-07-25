@@ -1,0 +1,81 @@
+Selectors
+=========
+Class Selectors (.) override element selectors
+
+ids should exits once, ids should be unique
+classes and element selectors are more common, rarely should id's be used 
+
+mostly used to link form input back to a label element
+even JS might have id uses 
+
+grouping selectors
+------------------
+all h1 and h2 is selected
+h1, h2{
+    color:red
+}
+
+h2 inside of h1 (descendants)
+h1  h2{
+    color:red
+}
+
+universal selector (*)
+
+cascade, works top to bottom
+the last rule is applied, sepcificity can override this
+
+
+Inheritance
+all elements inherit properties from the parent element
+html is parent to all elements
+
+
+universal selector is NOT Inheritance, it jus applies it all the elements
+
+form elements don't inherit font settings
+
+!important,overrides everything else, NUCLEAR option
+
+sepcificity calculator
+check how rules are applied or NOT applied
+
+
+Colors
+======
+colors can be added using 
+1. color names
+2. RGB values
+3. RGA values
+4. HEX code
+6. HSL (hue saturation lightness)
+6. HSLA (hue saturation lightness alpha)
+
+Tools: COOLORS
+
+Units and Sizes
+===============
+
+Unit | Name                 | Equivalent
+-----|----------------------|-----------------------------
+cm   | Centimeters          | 1cm = 37.8px = 25.2/64in
+mm   | Millimeters          | 1mm = 1/10cm
+Q    | Quarter-millimeters  | 1Q = 1/40cm
+in   | Inches               | 1in = 2.54cm = 96px
+pc   | Picas                | 1pc = 1/6in
+pt   | Points               | 1pt = 1/72in
+px   | Pixels               | 1px = 1/96in
+
+absolute units
+Pixels - px
+
+using absiolute font size, takes away control from users to change the font size
+
+Relative units 
+% - percentages
+
+rem - font size of the root element
+    root is defined by the browser
+    default - 1rem (root em) 
+
+em - root of the root
