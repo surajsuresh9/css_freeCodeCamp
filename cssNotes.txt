@@ -79,3 +79,20 @@ rem - font size of the root element
     default - 1rem (root em) 
 
 em - root of the root
+vw- 1% of viewports width ; 50 vw=50% of width
+vh- 1% of viewports height
+
+CSS Reset
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+
+Body is not the full height of the page, it only grows with the content
+but we would want the body's height to be the full length of the vierwport's height,
+regardless of the content, set 
+
+body{
+    min-height:100vh
+}
