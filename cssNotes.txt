@@ -258,3 +258,22 @@ CSS Margin Collapse
 
   Note: Margin collapse only happens with top and bottom margins! Not left and right margins!
 
+
+CSS Positions
+-------------
+absolute:
+    absolute elements need a relative parent, if it doesn't have an ancestor
+    elment that is positioned relative, then it takes the initial boundary of the initial box (browser window)
+
+fixed: 
+    scrolls with the page, taken out of document flow    
+
+    
+| ----------------- | ----------------- | ------------------------------- |
+|   Feature         | position: fixed   | position: sticky                |
+| ----------------- | ----------------- | ------------------------------- |
+|   Width           | Content-driven    | 100% of parent                  |
+|   Layout Space    | Takes zero space  | Reserves original space         |
+|   Scroll Anchor   | Viewport          | Parent container                |
+|   Z-Index         | Usually needed    | Needed if content scrolls under |
+| ----------------- | ----------------- | ------------------------------- |
