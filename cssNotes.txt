@@ -226,3 +226,35 @@ none:
     - removes element from the document flow
     
 margin-inline: applies to left and right    
+
+float
+-----
+- used to float elements to the left and the right, text wraps around it  
+- float takes an element out of the normal flow of the page, other elements wrap around it 
+- to clear (i.e make sure formatting is correct, use 'clear: both' apply to the floated div)
+- we can use floats inside of containers as well
+    legacy: overflow:auto;
+    modern: display: flow-root; 
+  this ensure that the container conatisn the full floated element and doesn't 
+  shrink based on the text content alone
+
+
+columns
+-------
+columns can be used to display content
+    column-count: 4;
+    column-width: 250px;
+        OR
+    columns: 4 250px;
+    
+    column-rule: 3px solid #333;
+    column-gap: 3rem;
+
+CSS Margin Collapse
+------------------
+- Margin collapse is when two margins collapse into a single margin.
+- Top and bottom margins of elements are sometimes collapsed into a 
+  single margin that is equal to the largest of the two margins.
+
+  Note: Margin collapse only happens with top and bottom margins! Not left and right margins!
+
