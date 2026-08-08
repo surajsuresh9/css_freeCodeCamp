@@ -277,3 +277,36 @@ fixed:
 |   Scroll Anchor   | Viewport          | Parent container                |
 |   Z-Index         | Usually needed    | Needed if content scrolls under |
 | ----------------- | ----------------- | ------------------------------- |
+
+
+FlexBox
+-------
+1-D arrangement on flex container
+
+flex container properties
+-------------------------
+display:flex
+flex-direction: row | column
+align-content, justify-content: start | end | center | space around | space between | space evenly
+flex-wrap: wrap | nowrap | wrap-reverse 
+
+flex flow = direction + wrap
+
+align-content:  start | end | center | space around | space between | space evenly
+    if multiple rows are present in a container, this controls there placement
+
+flex item properties
+--------------------    
+display:flex
+justify-content: center
+align-item:center
+
+flex-basis: 250px; // essentially min-width (baseline)
+flex-shrink: 1; // shrink below basline
+flex-grow: 1; // grow above basline
+
+flex: 1 1 40% // grow shrink basis
+
+order: 1 // end
+order: 0 // default
+order: -1 // begining
