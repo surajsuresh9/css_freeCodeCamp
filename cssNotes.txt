@@ -200,3 +200,29 @@ a:active {
 order matters, visited, hover, active
 
 Accessibility: use focus
+
+
+Display
+-------
+block
+    - have 100% width (of what is avaiable to them (parent container)) 
+    - they stack on top of each other
+    - create a new line
+
+inline
+    - only take up width of the content 
+    - do not stack on top of each other
+    - do not create a new line
+    - no margin nad height can be applied
+    - padding can be applied
+
+inline-block
+    - hybrid of the 2 
+    - keep the content inline, but also apply margin, padding, height etc
+      that only block level elements can have
+    - style links as buttons, turning a list into a row
+
+none:
+    - removes element from the document flow
+    
+margin-inline: applies to left and right    
